@@ -1,0 +1,56 @@
+.snowflake-wrapper {
+  animation-fill-mode: forwards;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  z-index: 0.5;
+  animation-duration: 1.5s;
+  animation-name: fall-1;
+}
+.snowflake {
+  width: inherit;
+  height: inherit;
+  position: inherit;
+}
+
+.background-snowflake {
+  filter: blur(10px);
+  display: none;
+  position: inherit;
+}
+
+@keyframes fall-1 {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(200px) rotate(250deg);
+    width: 10px;
+    opacity: 0;
+  }
+}
+
+@keyframes fall-2 {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(200px) rotate(-160deg);
+    width: 10px;
+    opacity: 0;
+  }
+}
+
+@keyframes fall-3 {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(150px) rotate(340deg);
+    width: 10px;
+    opacity: 0;
+  }
+}
